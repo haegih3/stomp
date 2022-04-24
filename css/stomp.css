@@ -133,7 +133,7 @@ header {
 	background: no-repeat center;
 }
 .top-area h1.logo a {
-	background-image: url(../img/main-top-logo.png);
+	background-image: url(/img/main-top-logo.png);
 }
 .top-area .tnb-area {
   float: right;
@@ -350,7 +350,7 @@ header {
   display: table;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background: url(../img/allmenu-bg.jpg) no-repeat center / cover;
+  background: url(/img/allmenu-bg.jpg) no-repeat center / cover;
 }
 .tnb-group.full .btn-tnb {
   position: absolute;
@@ -498,24 +498,24 @@ header {
   display: block;
   width: 100%; height: 100%;
   line-height: 40px;
-  background: url(../img/arr-icon-b.png) no-repeat right center;
+  background: url(/img/arr-icon-b.png) no-repeat right center;
   z-index: 1;
 }
 
 /* section1 */
 .section1 {
   padding: 0 6%;
-  background: url(../img/visual_bg.jpg) no-repeat center / cover;
+  background: url(/img/visual_bg.jpg) no-repeat center / cover;
 }
 .section1 .section-wrap {
-  background: url(../img/80.jpg) no-repeat right calc((100vh - 150px)/3) / 75% auto;
+  background: url(/img/80.jpg) no-repeat right calc((100vh - 150px)/3) / 75% auto;
 }
 .section1 .sect-tit {
   position: relative;
   padding: 20px 0;
   margin-bottom: 30px;
   height: 150px;
-  background: url(../img/visual-des-txt.png) no-repeat 160px top;
+  background: url(/img/visual-des-txt.png) no-repeat 160px top;
 }
 .section1 .sect-tit:after {
   position: absolute;
@@ -604,7 +604,7 @@ header {
   border-width: 2px;
 }
 .section1 .btn-area button:nth-child(2) span {
-  background-image: url(../img/arr-icon-w.png);
+  background-image: url(/img/arr-icon-w.png);
   color: #fff;
 }
 
@@ -643,7 +643,7 @@ header {
 }
 .section2 .btn-area > button:hover:before {width: 100%}
 .section2 .btn-area > button:hover span {
-  background-image: url(../img/arr-icon-w.png);
+  background-image: url(/img/arr-icon-w.png);
   color: #fff;
 }
 
@@ -724,8 +724,8 @@ header {
   width: 100%; height: 100%;
   background: no-repeat center;
 }
-.section2 .btn .prev:after {background-image: url(../img/arr-prev.png);}
-.section2 .btn .next:after {background-image: url(../img/arr-next.png);}
+.section2 .btn .prev:after {background-image: url(/img/arr-prev.png);}
+.section2 .btn .next:after {background-image: url(/img/arr-next.png);}
 .section2 .indicator {
 	position: absolute;
   right: 0; bottom: 18%;
@@ -811,11 +811,11 @@ header {
   width: 100%; height: 100%;
   background: no-repeat center;
 }
-.section3 .tab-menu li:nth-child(1) a i:after {background-image: url(../img/tab-ico01.png);}
-.section3 .tab-menu li:nth-child(2) a i:after {background-image: url(../img/tab-ico02.png);}
-.section3 .tab-menu li:nth-child(3) a i:after {background-image: url(../img/tab-ico03.png);}
-.section3 .tab-menu li:nth-child(4) a i:after {background-image: url(../img/tab-ico04.png);}
-.section3 .tab-menu li:nth-child(5) a i:after {background-image: url(../img/tab-ico05.png);}
+.section3 .tab-menu li:nth-child(1) a i:after {background-image: url(/img/tab-ico01.png);}
+.section3 .tab-menu li:nth-child(2) a i:after {background-image: url(/img/tab-ico02.png);}
+.section3 .tab-menu li:nth-child(3) a i:after {background-image: url(/img/tab-ico03.png);}
+.section3 .tab-menu li:nth-child(4) a i:after {background-image: url(/img/tab-ico04.png);}
+.section3 .tab-menu li:nth-child(5) a i:after {background-image: url(/img/tab-ico05.png);}
 .section3 .tab-menu li a span {
   font-size: 1.7rem;
   opacity: 0;
@@ -941,7 +941,7 @@ header {
 }
 .section3 .swiper-slide .desc .btn-area button span {
 	position: relative;
-	background: url(../img/arr-icon-w.png) no-repeat right center;
+	background: url(/img/arr-icon-w.png) no-repeat right center;
 	color: #fff;
 }
 .section3 .swiper-slide .desc .btn-area button:before {
@@ -962,14 +962,14 @@ header {
   border: 1px solid #ccc;
 	top: 50%;
 }
-.section3 .swiper-container .swiper-button-next {background-image: url(../img/arr-next.png);right: 0;}
-.section3 .swiper-container .swiper-button-prev {background-image: url(../img/arr-prev.png);left: 0;}
+.section3 .swiper-container .swiper-button-next {background-image: url(/img/arr-next.png);right: 0;}
+.section3 .swiper-container .swiper-button-prev {background-image: url(/img/arr-prev.png);left: 0;}
 .section3 .swiper-button-next:after,
 .section3 .swiper-button-prev:after {font-size: 0;}
 
 /* section4 */
 .section4 {
-	background: url(../img/section04_bg.jpg) no-repeat center / cover;
+	background: url(/img/section04_bg.jpg) no-repeat center / cover;
 }
 .section4 .section-wrap {width: 100%;}
 .section4 .sect-tit {
@@ -1054,22 +1054,22 @@ header {
 }
 .sns-content .sns-blog h3 {color: #51a00c;}
 .sns-content .sns-blog h3 span {
-	background-image: url(../img/favi-blog.png);
+	background-image: url(/img/favi-blog.png);
 	background-color: #66ba1c;
 }
 .sns-content .sns-insta h3 {color: #752b92;}
 .sns-content .sns-insta h3 span {
-	background-image: url(../img/favi-insta.jpg);
+	background-image: url(/img/favi-insta.jpg);
 	background-color: #e12929;
 }
 .sns-content .sns-youtube h3 {color: #e12929;}
 .sns-content .sns-youtube h3 span {
-	background-image: url(../img/favi-youtb.png);
+	background-image: url(/img/favi-youtb.png);
 	background-color: #e12929;
 }
 .sns-content .sns-facebook h3 {color: #244e9c;}
 .sns-content .sns-facebook h3 span {
-	background-image: url(../img/favi-faceb.png);
+	background-image: url(/img/favi-faceb.png);
 	background-color: #244e9c;
 }
 .sns-content h4 {
@@ -1100,10 +1100,10 @@ header {
 	min-height: 170px;
 	background: no-repeat center / cover;
 }
-.sns-content .sns-blog figure {background-image: url(../img/banner_blog.jpg);}
-.sns-content .sns-insta figure {background-image: url(../img/banner_instar.jpg);}
-.sns-content .sns-youtube figure {background-image: url(../img/banner_youtube.jpg);}
-.sns-content .sns-facebook figure {background-image: url(../img/banner_facebook.jpg);}
+.sns-content .sns-blog figure {background-image: url(/img/banner_blog.jpg);}
+.sns-content .sns-insta figure {background-image: url(/img/banner_instar.jpg);}
+.sns-content .sns-youtube figure {background-image: url(/img/banner_youtube.jpg);}
+.sns-content .sns-facebook figure {background-image: url(/img/banner_facebook.jpg);}
 
 /* footer */
 #footer {
@@ -1115,11 +1115,14 @@ header {
 	margin: 0 auto;
 	padding: 10% 0;
 }
-#footer h1 {
+#footer .f-logo {
 	float: left;
-	width: 140px; height: 50px;
 	margin-right: 50px;
-	background: url(../img/foot-logo.png) no-repeat center;
+}
+#footer .f-logo a {
+  display: block;
+	width: 140px; height: 50px;
+	background: url(/img/foot-logo.png) no-repeat center;
 }
 #footer .f-content {
 	float: left;
