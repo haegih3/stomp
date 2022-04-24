@@ -23,14 +23,7 @@ PS D:\pofol\stomp> git config --global --list
 core.autocrlf=true
 user.name=haegih3
 user.email=haegih3@gmail.com
-PS D:\pofol\stomp> q
-포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
-위치 줄:1 문자:1
-+ q
-+ ~
-    + CategoryInfo          : ObjectNotFound: (q:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
- 
+
 PS D:\pofol\stomp> git status
 On branch master
 
@@ -462,17 +455,13 @@ Author: haegih3 <haegih3@gmail.com>
 Date:   Sun Apr 24 15:32:29 2022 +0900
 
     Start project
-PS D:\pofol\stomp> q
-q : 'q' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가  
-포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
-위치 줄:1 문자:1
-+ q
-+ ~
-    + CategoryInfo          : ObjectNotFound: (q:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
- 
+
+# origin이란 별칭(통상적별칭으로 헷갈리지 않게 이것으로 통칭함)으로 원격 저장소를 연결
 PS D:\pofol\stomp> git remote add origin https://github.com/haegih3/stomp.git
+
+# origin이란 별칭으로 원격 저장소로 버전 내역 전송
 PS D:\pofol\stomp> git push origin master
+
 info: please complete authentication in your browser...
 Enumerating objects: 192, done.
 Counting objects: 100% (192/192), done.
@@ -483,4 +472,4 @@ Total 192 (delta 27), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (27/27), done.
 To https://github.com/haegih3/stomp.git
  * [new branch]      master -> master
-PS D:\pofol\stomp> 
+PS D:\pofol\stomp>
