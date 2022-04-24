@@ -68,4 +68,64 @@ $(function () {
             $bg.removeClass('on');
         });
     });
+
+
+    //가로값에 따른 반응형
+    if ($win.width() >= 1280) {
+
+    } else if ($win.width() < 1280 && $win.width() > 769) {
+			
+        //전체메뉴버튼
+        $('.tnb-list').each(function() {
+            var $tnbMain = $('.tnb-list'),
+                    lines = $tnbMain.children('li'),
+                    allA = lines.children('a'),
+                    $tnbSub = $tnbMain.find('.tnb-sub');
+
+            //sub메뉴 아코디언
+            allA.on('click', function(e) {
+                e.preventDefault();
+
+                var subID = $(this).attr('href'),
+                        $currentSub = $(subID);
+                if ($(this).hasClass('on')) {
+                    $(this).removeClass('on');
+                    $currentSub.slideUp();
+                } else {
+                    allA.removeClass('on');
+                    $tnbSub.slideUp();
+                    $(this).addClass('on');
+                    $currentSub.slideDown();
+                }
+            });
+        });
+
+    } else if ($win.width() <= 768) {
+			
+	    //전체메뉴버튼
+        $('.tnb-list').each(function() {
+            var $tnbMain = $('.tnb-list'),
+                    lines = $tnbMain.children('li'),
+                    allA = lines.children('a'),
+                    $tnbSub = $tnbMain.find('.tnb-sub');
+
+            //sub메뉴 아코디언
+            allA.on('click', function(e) {
+                e.preventDefault();
+
+                var subID = $(this).attr('href'),
+                        $currentSub = $(subID);
+                if ($(this).hasClass('on')) {
+                    $(this).removeClass('on');
+                    $currentSub.slideUp();
+                } else {
+                    allA.removeClass('on');
+                    $tnbSub.slideUp();
+                    $(this).addClass('on');
+                    $currentSub.slideDown();
+                }
+            });
+        });
+
+    }
 });
