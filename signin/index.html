@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/css/reset.css" type="text/css">
     <link rel="stylesheet" href="/package/css/swiper.min.css" type="text/css">
     <link rel="stylesheet" href="/css/stomp.css" type="text/css">
-    <link rel="stylesheet" href="/css/stomp-sub.css" type="text/css">
+    <!-- <link rel="stylesheet" href="/css/stomp-sub.css" type="text/css"> -->
+    <link rel="stylesheet" href="/css/signin.css" type="text/css">
     <link rel="stylesheet" href="/css/tablet.css" media="screen and (min-width: 769px) and (max-width: 1599px)">
     <link rel="stylesheet" href="/css/tablet-m.css" media="screen and (min-width: 769px) and (max-width: 1279px)">
     <link rel="stylesheet" href="/css/tablet-s.css" media="screen and (min-width: 769px) and (max-width: 1024px)">
@@ -133,7 +134,7 @@
                 <div class="gnb-bg"></div>
                 <ul class="cf">
                     <li class="gnb-menu">
-                        <a href="about.html">STOMP MUSIC</a>
+                        <a href="/about.html">STOMP MUSIC</a>
                         <div class="lnb">
                             <div class="lnb-wrap cf">
                                 <div class="lnb-text">
@@ -144,15 +145,15 @@
                                     <img src="/img/depthbg_1.jpg" alt="바이올린">
                                 </figure>
                                 <ul class="lnb-list cf">
-                                    <li><a href="about.html">스톰프뮤직 소개</a></li>
-                                    <li><a href="about.html">연혁</a></li>
-                                    <li><a href="about.html">오시는 길</a></li>
+                                    <li><a href="/about.html">스톰프뮤직 소개</a></li>
+                                    <li><a href="/about.html">연혁</a></li>
+                                    <li><a href="/about.html">오시는 길</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
                     <li class="gnb-menu">
-                        <a href="concert.html">CONCERT</a>
+                        <a href="/concert.html">CONCERT</a>
                         <div class="lnb">
                             <div class="lnb-wrap cf">
                                 <div class="lnb-text">
@@ -163,11 +164,11 @@
                                     <img src="/img/depthbg_2.jpg" alt="콘서트홀">
                                 </figure>
                                 <ul class="lnb-list tres">
-                                    <li><a href="concert.html">2020</a></li>
-                                    <li><a href="concert.html">2019</a></li>
-                                    <li><a href="concert.html">2018</a></li>
-                                    <li><a href="concert.html">2017</a></li>
-                                    <li><a href="concert.html">2017 이전</a></li>
+                                    <li><a href="/concert.html">2020</a></li>
+                                    <li><a href="/concert.html">2019</a></li>
+                                    <li><a href="/concert.html">2018</a></li>
+                                    <li><a href="/concert.html">2017</a></li>
+                                    <li><a href="/concert.html">2017 이전</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -279,21 +280,29 @@
             </div>
         </header>
         <!-- header -->
-        <div class="location">
-            <ul class="one-depth cf">
-                <li>
-                    <a href="/index.html" class="mo-hdd"><span class="blind">홈으로 가기</span></a>
-                </li>
-                <li class="current-menu">
-                    <a href="javascript:;">SIGN IN</a>
-                </li>
-            </ul>
-        </div>
         <div id="container">
-            <div class="about-sect">
-                <div class="section-wrap">
+            <!-- <div class="section-wrap"> -->
+                <div class="signin-sect">
+                    <h1>로그인</h1>
+                    <div class="signin__card">
+                        <h2><strong>Welcome! Stomp Music</strong>에 오신 것을 환영합니다.</h2>
+                        <form action="">
+                            <input type="text" placeholder="아이디를 입력하세요" />
+                            <input type="password" placeholder="비밀번호를 입력하세요" />
+                            <input type="submit" value="로그인" />
+                            <p>
+                                * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br>
+                                정기적으로 비밀번호를 변경하세요!
+                            </p>
+                        </form>
+                        <div class="actions">
+                            <a href="javascript:void(0);">회원가입</a>
+                            <a href="javascript:void(0);">아이디 찾기</a>
+                            <a href="javascript:void(0);">비밀번호 찾기</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            <!-- </div> -->
             <div id="footer">
                 <footer class="cf">
                     <h1 class="f-logo">
