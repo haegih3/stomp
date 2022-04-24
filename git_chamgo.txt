@@ -1,0 +1,486 @@
+Windows PowerShell
+PS D:\pofol\stomp> git --version
+git version 2.35.1.windows.2
+
+# git에 버전관리 등록
+PS D:\pofol\stomp> git init
+
+
+# 개행문자(NewLine) 설정
+## macOS
+PS D:\pofol\stomp> git config --global core.autocrlf true
+## windows
+PS D:\pofol\stomp> git config --global core.autocrlf true
+# 사용자 정보
+## 커밋(버전생성)을 위한 정보 등록
+PS D:\pofol\stomp> git config --global user.name 'haegih3'
+PS D:\pofol\stomp> git config --global user.email 'haegih3@gmail.com'
+
+
+# 구성확인
+## q키를 눌러서 종료
+PS D:\pofol\stomp> git config --global --list
+core.autocrlf=true
+user.name=haegih3
+user.email=haegih3@gmail.com
+PS D:\pofol\stomp> q
+포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+위치 줄:1 문자:1
++ q
++ ~
+    + CategoryInfo          : ObjectNotFound: (q:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\pofol\stomp> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+        concert.html
+        css/
+        img/
+        index.html
+        js/
+        package/
+        webfonts/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\pofol\stomp> git add .
+warning: LF will be replaced by CRLF in css/all.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in css/debug.log.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in js/jquery-3.5.1.min.js.       
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in js/jquery-ui.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in js/jquery.easing.1.3.js.      
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in js/jquery.mousewheel.min.js.  
+The file will have its original line endings in your working directory
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/css/swiper.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/css/swiper.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/js/swiper.esm.browser.bundle.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/js/swiper.esm.browser.bundle.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/js/swiper.esm.bundle.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/js/swiper.esm.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/js/swiper.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package/js/swiper.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in webfonts/fa-brands-400.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in webfonts/fa-regular-400.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in webfonts/fa-solid-900.svg.
+The file will have its original line endings in your working directory
+PS D:\pofol\stomp> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   about.html
+        new file:   concert.html
+        new file:   css/all.min.css
+        new file:   css/debug.log
+        new file:   css/fonts.css
+        new file:   css/mobile-s.css
+        new file:   css/mobile.css
+        new file:   css/reset.css
+        new file:   css/stomp-sub.css
+        new file:   css/stomp.css
+        new file:   css/tablet-m.css
+        new file:   css/tablet-s.css
+        new file:   css/tablet.css
+        new file:   img/4cellists_cd.png
+        new file:   img/4cellists_cover.jpg
+        new file:   img/80.jpg
+        new file:   img/Canon-Fantasy-for-Solo-Saxophone-and-Piano_cd.png
+        new file:   img/Canon-Fantasy-for-Solo-Saxophone-and-Piano_cover.jpg
+        new file:   img/Endangered-Quartet-Heart_cd.png
+        new file:   img/Endangered-Quartet-Heart_cover.jpg
+        new file:   img/Janice-Faber-Settings-in-Silver_cd.png
+        new file:   img/Janice-Faber-Settings-in-Silver_cover.jpg
+        new file:   img/Jazz-Sabbath_cd.png
+        new file:   img/Jazz-Sabbath_cover.jpg
+        new file:   img/Jenny-Oaks-Baker-No-One-Is-Alone_cd.png
+        new file:   img/Jenny-Oaks-Baker-No-One-Is-Alone_cover.jpg
+        new file:   img/Notturno_cd.png
+        new file:   img/Notturno_cover.jpg
+        new file:   img/ONSOHO-COLLECCION_cd.png
+        new file:   img/ONSOHO-COLLECCION_cover.jpg
+        new file:   img/Open-Water_cd.png
+        new file:   img/Open-Water_cover.jpg
+        new file:   img/StarSpangled_JOB_cd.png
+        new file:   img/StarSpangled_JOB_cover.jpg
+        new file:   img/Suo-Gan_cd.png
+        new file:   img/Suo-Gan_cover.jpg
+        new file:   img/Tony-Desare-WANT-YOU_cd.png
+        new file:   img/Tony-Desare-WANT-YOU_cover.jpg
+        new file:   img/Tony-Desare_cd.png
+        new file:   img/Tony-Desare_cover.jpg
+        new file:   img/about-img01.jpg
+        new file:   img/about-img02.jpg
+        new file:   img/act_cd.png
+        new file:   img/act_cover.jpg
+        new file:   img/acto2_cd.png
+        new file:   img/acto2_cover.jpg
+        new file:   img/allmenu-bg.jpg
+        new file:   img/alone_cd.png
+        new file:   img/alone_cover.jpg
+        new file:   img/arr-icon-b.png
+        new file:   img/arr-icon-w.png
+        new file:   img/arr-next.png
+        new file:   img/arr-prev.png
+        new file:   img/banner_blog.jpg
+        new file:   img/banner_facebook.jpg
+        new file:   img/banner_instar.jpg
+        new file:   img/banner_youtube.jpg
+        new file:   img/center_cd.png
+        new file:   img/center_cover.jpg
+        new file:   img/close-icon.png
+        new file:   img/depthbg_1.jpg
+        new file:   img/depthbg_2.jpg
+        new file:   img/depthbg_3.jpg
+        new file:   img/depthbg_4.jpg
+        new file:   img/depthbg_5.jpg
+        new file:   img/depthbg_6.jpg
+        new file:   img/depthbg_7.jpg
+        new file:   img/dv-arr.png
+        new file:   img/emotion_cd.png
+        new file:   img/emotion_cover.jpg
+        new file:   img/european-fantasy_cd.png
+        new file:   img/european-fantasy_cover.jpg
+        new file:   img/favi-blog.png
+        new file:   img/favi-faceb.png
+        new file:   img/favi-insta.jpg
+        new file:   img/favi-youtb.png
+        new file:   img/foot-logo.png
+        new file:   img/ghibli_cd.png
+        new file:   img/ghibli_cover.jpg
+        new file:   img/girl_cd.png
+        new file:   img/girl_cover.jpg
+        new file:   img/haruki_cd.png
+        new file:   img/haruki_cover.jpg
+        new file:   img/home.png
+        new file:   img/hong_cd.png
+        new file:   img/hong_cover.jpg
+        new file:   img/juliet-lyons_cd.png
+        new file:   img/juliet-lyons_cover.jpg
+        new file:   img/jung_cd.png
+        new file:   img/jung_cover.jpg
+        new file:   img/last_de_txt.png
+        new file:   img/link-arr.png
+        new file:   img/main-top-logo.png
+        new file:   img/main_concert_01.jpg
+        new file:   img/main_concert_02.jpg
+        new file:   img/main_concert_03.jpg
+        new file:   img/main_concert_04.jpg
+        new file:   img/main_concert_05.jpg
+        new file:   img/main_concert_06.jpg
+        new file:   img/main_concert_07.jpg
+        new file:   img/main_concert_08.jpg
+        new file:   img/main_concert_09.jpg
+        new file:   img/main_concert_10.jpg
+        new file:   img/mr-hong_cd.png
+        new file:   img/mr-hong_cover.jpg
+        new file:   img/noel_cd.png
+        new file:   img/noel_cover.jpg
+        new file:   img/ochestra_cd.png
+        new file:   img/ochestra_cover.jpg
+        new file:   img/one-for-my-baby_cd.png
+        new file:   img/one-for-my-baby_cover.jpg
+        new file:   img/one-year-later_cd.png
+        new file:   img/one-year-later_cover.jpg
+        new file:   img/path_down.png
+        new file:   img/path_down_on.png
+        new file:   img/peaceful-retreat_cd.png
+        new file:   img/peaceful-retreat_cover.jpg
+        new file:   img/piano_cd.png
+        new file:   img/piano_cover.jpg
+        new file:   img/rJenny-Oaks-Baker_cd.png
+        new file:   img/rJenny-Oaks-Baker_cover.jpg
+        new file:   img/search-icon-w.png
+        new file:   img/search-icon.png
+        new file:   img/section04_bg.jpg
+        new file:   img/since_txt.png
+        new file:   img/sns_blog.png
+        new file:   img/sns_facebook.png
+        new file:   img/sns_insta.png
+        new file:   img/sns_youtb.png
+        new file:   img/star-wars_cd.png
+        new file:   img/star-wars_cover.jpg
+        new file:   img/tab-ico01.png
+        new file:   img/tab-ico02.png
+        new file:   img/tab-ico03.png
+        new file:   img/tab-ico04.png
+        new file:   img/tab-ico05.png
+        new file:   img/tango_cd.png
+        new file:   img/tango_cover.jpg
+        new file:   img/tony_cd.png
+        new file:   img/tony_cover.jpg
+        new file:   img/visual-des-txt.png
+        new file:   img/visual_bg.jpg
+        new file:   img/visual_bg_m.jpg
+        new file:   img/yoonhan_cd.png
+        new file:   img/yoonhan_cover.png
+        new file:   index.html
+        new file:   js/jquery-3.5.1.min.js
+        new file:   js/jquery-ui.min.js
+        new file:   js/jquery.easing.1.3.js
+        new file:   js/jquery.mousewheel.min.js
+        new file:   js/script-sub.js
+        new file:   js/script.js
+        new file:   package/bundle/package.json
+        new file:   package/css/swiper.css
+        new file:   package/css/swiper.min.css
+        new file:   package/js/swiper.esm.browser.bundle.js
+        new file:   package/js/swiper.esm.browser.bundle.js.map
+        new file:   package/js/swiper.esm.browser.bundle.min.js
+        new file:   package/js/swiper.esm.browser.bundle.min.js.map
+        new file:   package/js/swiper.esm.bundle.js.map
+        new file:   package/js/swiper.esm.js
+        new file:   package/js/swiper.esm.js.map
+        new file:   package/js/swiper.js
+        new file:   package/js/swiper.js.map
+        new file:   package/js/swiper.min.js
+        new file:   package/js/swiper.min.js.map
+        new file:   webfonts/fa-brands-400.eot
+        new file:   webfonts/fa-brands-400.svg
+        new file:   webfonts/fa-brands-400.ttf
+        new file:   webfonts/fa-brands-400.woff
+        new file:   webfonts/fa-brands-400.woff2
+        new file:   webfonts/fa-regular-400.eot
+        new file:   webfonts/fa-regular-400.svg
+        new file:   webfonts/fa-regular-400.ttf
+        new file:   webfonts/fa-regular-400.woff
+        new file:   webfonts/fa-regular-400.woff2
+        new file:   webfonts/fa-solid-900.eot
+        new file:   webfonts/fa-solid-900.svg
+        new file:   webfonts/fa-solid-900.ttf
+        new file:   webfonts/fa-solid-900.woff
+        new file:   webfonts/fa-solid-900.woff2
+
+
+# 메시지(-m)와 함께 버전을 생성 -프로젝트 생성
+PS D:\pofol\stomp> git commit -m 'Start project'
+[master (root-commit) bd511ad] Start project
+ 182 files changed, 47543 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 concert.html
+ create mode 100644 css/all.min.css
+ create mode 100644 css/debug.log
+ create mode 100644 css/fonts.css
+ create mode 100644 css/mobile-s.css
+ create mode 100644 css/mobile.css
+ create mode 100644 css/reset.css
+ create mode 100644 css/stomp-sub.css
+ create mode 100644 css/stomp.css
+ create mode 100644 css/tablet-m.css
+ create mode 100644 css/tablet-s.css
+ create mode 100644 css/tablet.css
+ create mode 100644 img/4cellists_cd.png
+ create mode 100644 img/4cellists_cover.jpg
+ create mode 100644 img/80.jpg
+ create mode 100644 img/Canon-Fantasy-for-Solo-Saxophone-and-Piano_cd.png
+ create mode 100644 img/Canon-Fantasy-for-Solo-Saxophone-and-Piano_cover.jpg
+ create mode 100644 img/Endangered-Quartet-Heart_cd.png
+ create mode 100644 img/Endangered-Quartet-Heart_cover.jpg
+ create mode 100644 img/Janice-Faber-Settings-in-Silver_cd.png
+ create mode 100644 img/Janice-Faber-Settings-in-Silver_cover.jpg
+ create mode 100644 img/Jazz-Sabbath_cd.png
+ create mode 100644 img/Jazz-Sabbath_cover.jpg
+ create mode 100644 img/Jenny-Oaks-Baker-No-One-Is-Alone_cd.png
+ create mode 100644 img/Jenny-Oaks-Baker-No-One-Is-Alone_cover.jpg
+ create mode 100644 img/Notturno_cd.png
+ create mode 100644 img/Notturno_cover.jpg
+ create mode 100644 img/ONSOHO-COLLECCION_cd.png
+ create mode 100644 img/ONSOHO-COLLECCION_cover.jpg
+ create mode 100644 img/Open-Water_cd.png
+ create mode 100644 img/Open-Water_cover.jpg
+ create mode 100644 img/StarSpangled_JOB_cd.png
+ create mode 100644 img/StarSpangled_JOB_cover.jpg
+ create mode 100644 img/Suo-Gan_cd.png
+ create mode 100644 img/Suo-Gan_cover.jpg
+ create mode 100644 img/Tony-Desare-WANT-YOU_cd.png
+ create mode 100644 img/Tony-Desare-WANT-YOU_cover.jpg
+ create mode 100644 img/Tony-Desare_cd.png
+ create mode 100644 img/Tony-Desare_cover.jpg
+ create mode 100644 img/about-img01.jpg
+ create mode 100644 img/about-img02.jpg
+ create mode 100644 img/act_cd.png
+ create mode 100644 img/act_cover.jpg
+ create mode 100644 img/acto2_cd.png
+ create mode 100644 img/acto2_cover.jpg
+ create mode 100644 img/allmenu-bg.jpg
+ create mode 100644 img/alone_cd.png
+ create mode 100644 img/alone_cover.jpg
+ create mode 100644 img/arr-icon-b.png
+ create mode 100644 img/arr-icon-w.png
+ create mode 100644 img/arr-next.png
+ create mode 100644 img/arr-prev.png
+ create mode 100644 img/banner_blog.jpg
+ create mode 100644 img/banner_facebook.jpg
+ create mode 100644 img/banner_instar.jpg
+ create mode 100644 img/banner_youtube.jpg
+ create mode 100644 img/center_cd.png
+ create mode 100644 img/center_cover.jpg
+ create mode 100644 img/close-icon.png
+ create mode 100644 img/depthbg_1.jpg
+ create mode 100644 img/depthbg_2.jpg
+ create mode 100644 img/depthbg_3.jpg
+ create mode 100644 img/depthbg_4.jpg
+ create mode 100644 img/depthbg_5.jpg
+ create mode 100644 img/depthbg_6.jpg
+ create mode 100644 img/depthbg_7.jpg
+ create mode 100644 img/dv-arr.png
+ create mode 100644 img/emotion_cd.png
+ create mode 100644 img/emotion_cover.jpg
+ create mode 100644 img/european-fantasy_cd.png
+ create mode 100644 img/european-fantasy_cover.jpg
+ create mode 100644 img/favi-blog.png
+ create mode 100644 img/favi-faceb.png
+ create mode 100644 img/favi-insta.jpg
+ create mode 100644 img/favi-youtb.png
+ create mode 100644 img/foot-logo.png
+ create mode 100644 img/ghibli_cd.png
+ create mode 100644 img/ghibli_cover.jpg
+ create mode 100644 img/girl_cd.png
+ create mode 100644 img/girl_cover.jpg
+ create mode 100644 img/haruki_cd.png
+ create mode 100644 img/haruki_cover.jpg
+ create mode 100644 img/home.png
+ create mode 100644 img/hong_cd.png
+ create mode 100644 img/hong_cover.jpg
+ create mode 100644 img/juliet-lyons_cd.png
+ create mode 100644 img/juliet-lyons_cover.jpg
+ create mode 100644 img/jung_cd.png
+ create mode 100644 img/jung_cover.jpg
+ create mode 100644 img/last_de_txt.png
+ create mode 100644 img/link-arr.png
+ create mode 100644 img/main-top-logo.png
+ create mode 100644 img/main_concert_01.jpg
+ create mode 100644 img/main_concert_02.jpg
+ create mode 100644 img/main_concert_03.jpg
+ create mode 100644 img/main_concert_04.jpg
+ create mode 100644 img/main_concert_05.jpg
+ create mode 100644 img/main_concert_06.jpg
+ create mode 100644 img/main_concert_07.jpg
+ create mode 100644 img/main_concert_08.jpg
+ create mode 100644 img/main_concert_09.jpg
+ create mode 100644 img/main_concert_10.jpg
+ create mode 100644 img/mr-hong_cd.png
+ create mode 100644 img/mr-hong_cover.jpg
+ create mode 100644 img/noel_cd.png
+ create mode 100644 img/noel_cover.jpg
+ create mode 100644 img/ochestra_cd.png
+ create mode 100644 img/ochestra_cover.jpg
+ create mode 100644 img/one-for-my-baby_cd.png
+ create mode 100644 img/one-for-my-baby_cover.jpg
+ create mode 100644 img/one-year-later_cd.png
+ create mode 100644 img/one-year-later_cover.jpg
+ create mode 100644 img/path_down.png
+ create mode 100644 img/path_down_on.png
+ create mode 100644 img/peaceful-retreat_cd.png
+ create mode 100644 img/peaceful-retreat_cover.jpg
+ create mode 100644 img/piano_cd.png
+ create mode 100644 img/piano_cover.jpg
+ create mode 100644 img/rJenny-Oaks-Baker_cd.png
+ create mode 100644 img/rJenny-Oaks-Baker_cover.jpg
+ create mode 100644 img/search-icon-w.png
+ create mode 100644 img/search-icon.png
+ create mode 100644 img/section04_bg.jpg
+ create mode 100644 img/since_txt.png
+ create mode 100644 img/sns_blog.png
+ create mode 100644 img/sns_facebook.png
+ create mode 100644 img/sns_insta.png
+ create mode 100644 img/sns_youtb.png
+ create mode 100644 img/star-wars_cd.png
+ create mode 100644 img/star-wars_cover.jpg
+ create mode 100644 img/tab-ico01.png
+ create mode 100644 img/tab-ico02.png
+ create mode 100644 img/tab-ico03.png
+ create mode 100644 img/tab-ico04.png
+ create mode 100644 img/tab-ico05.png
+ create mode 100644 img/tango_cd.png
+ create mode 100644 img/tango_cover.jpg
+ create mode 100644 img/tony_cd.png
+ create mode 100644 img/tony_cover.jpg
+ create mode 100644 img/visual-des-txt.png
+ create mode 100644 img/visual_bg.jpg
+ create mode 100644 img/visual_bg_m.jpg
+ create mode 100644 img/yoonhan_cd.png
+ create mode 100644 img/yoonhan_cover.png
+ create mode 100644 index.html
+ create mode 100644 js/jquery-3.5.1.min.js
+ create mode 100644 js/jquery-ui.min.js
+ create mode 100644 js/jquery.easing.1.3.js
+ create mode 100644 js/jquery.mousewheel.min.js
+ create mode 100644 js/script-sub.js
+ create mode 100644 js/script.js
+ create mode 100644 package/bundle/package.json
+ create mode 100644 package/css/swiper.css
+ create mode 100644 package/css/swiper.min.css
+ create mode 100644 package/js/swiper.esm.browser.bundle.js
+ create mode 100644 package/js/swiper.esm.browser.bundle.js.map
+ create mode 100644 package/js/swiper.esm.browser.bundle.min.js
+ create mode 100644 package/js/swiper.esm.bundle.js
+ create mode 100644 package/js/swiper.esm.bundle.js.map
+ create mode 100644 package/js/swiper.esm.js
+ create mode 100644 package/js/swiper.esm.js.map
+ create mode 100644 package/js/swiper.js
+ create mode 100644 package/js/swiper.min.js
+ create mode 100644 package/js/swiper.min.js.map
+ create mode 100644 webfonts/fa-brands-400.eot
+ create mode 100644 webfonts/fa-brands-400.svg
+ create mode 100644 webfonts/fa-brands-400.ttf
+ create mode 100644 webfonts/fa-brands-400.woff
+ create mode 100644 webfonts/fa-brands-400.woff2
+ create mode 100644 webfonts/fa-regular-400.eot
+ create mode 100644 webfonts/fa-regular-400.woff
+ create mode 100644 webfonts/fa-regular-400.woff2
+ create mode 100644 webfonts/fa-solid-900.eot
+ create mode 100644 webfonts/fa-solid-900.svg
+ create mode 100644 webfonts/fa-solid-900.ttf
+ create mode 100644 webfonts/fa-solid-900.woff
+ create mode 100644 webfonts/fa-solid-900.woff2
+PS D:\pofol\stomp> git log
+commit bd511ad7d0b01c50ff14d20d52e8543ffeb7e8ea (HEAD -> master)
+Author: haegih3 <haegih3@gmail.com>
+Date:   Sun Apr 24 15:32:29 2022 +0900
+
+    Start project
+PS D:\pofol\stomp> q
+q : 'q' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가  
+포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+위치 줄:1 문자:1
++ q
++ ~
+    + CategoryInfo          : ObjectNotFound: (q:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\pofol\stomp> git remote add origin https://github.com/haegih3/stomp.git
+PS D:\pofol\stomp> git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 192, done.
+Counting objects: 100% (192/192), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (191/191), done.
+Writing objects: 100% (192/192), 17.00 MiB | 6.72 MiB/s, done.
+Total 192 (delta 27), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (27/27), done.
+To https://github.com/haegih3/stomp.git
+ * [new branch]      master -> master
+PS D:\pofol\stomp> 
